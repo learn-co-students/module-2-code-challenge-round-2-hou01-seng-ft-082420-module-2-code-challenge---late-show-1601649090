@@ -1,8 +1,0 @@
-<h1>Episode <%= @episode.id %> Page</h1>
-
-<h1>Episode Date</h1>
-<% @episode.appearance.each do |episode| %>
-<li><%= link_to episode.guest.name, episode_path(episode.name) %> 
-<% end %>
-
-<%# <%=link_to guest.name, guest_path(guest) %>
