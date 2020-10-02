@@ -1,0 +1,7 @@
+<h1>All Appearances</h1>
+
+<ul>
+  <% @appearances.each do |a| %>
+    <li><%= link_to a.rating, appearance_path(a) %></li>
+  <% end %>
+</ul>
