@@ -1,0 +1,8 @@
+<% @guest.episodes.each do |e| %>
+<%= link_to e.date, episode_path(e) %>
+<%end%>
+
+<% @guest.appearances.each do |a| %>
+<li> <%= a.rating %> </li> 
+<%end%>
+
