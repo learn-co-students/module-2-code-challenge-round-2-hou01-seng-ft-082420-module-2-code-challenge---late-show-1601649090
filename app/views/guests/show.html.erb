@@ -1,0 +1,8 @@
+
+<% @guest.episodes.each do |episode| %>
+    <li><%= episode.date %></li>
+    <% end %>
+
+<% @guest.appearances.each do |ap| %>
+        <li><%= ap.rating %></li>
+        <% end %>

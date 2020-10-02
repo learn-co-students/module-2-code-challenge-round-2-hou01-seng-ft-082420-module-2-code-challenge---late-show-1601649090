@@ -1,0 +1,7 @@
+<%= form_with model: @appearance do  | f | %>
+    <%= f.label :Rating %>
+    <%= f.text_field :rating %>
+    <%= f.collection_select :guest_id, @guests, :id, :name%>
+    <%= f.collection_select :episode_id, @episodes, :id, :date %>
+    <%= f.submit "Submit" %>
+    <% end %>
