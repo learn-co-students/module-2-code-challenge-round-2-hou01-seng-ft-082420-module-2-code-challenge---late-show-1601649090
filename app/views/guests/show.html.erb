@@ -1,0 +1,12 @@
+<h1>Guest Show Page</h1>
+<hr>
+<%@guest.appearances.each do |appearance|%>
+<p>Episode Rating: <%=appearance.rating%></p>
+<%end%>
+
+<%@guest.appearances.each do |appearance|%>
+<p>Episode Link: <%= link_to appearance.episode.date, episode_path(appearance.episode)%></p>
+<%end%>
+
+
+

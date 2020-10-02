@@ -1,0 +1,10 @@
+<h1>Episode Show Page</h1>
+<hr>
+<p>Episode Date: <%=@episode.date%></p>
+<p>Average Rating:
+<p>Guests: <%@episode.appearances.each do |appearance|%></p>
+<%= link_to appearance.guest.name, guest_path(appearance.guest)%>
+<%end%>
+
+
+
