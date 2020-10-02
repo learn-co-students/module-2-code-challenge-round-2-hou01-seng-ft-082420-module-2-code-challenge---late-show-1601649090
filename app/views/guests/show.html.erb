@@ -1,6 +1,0 @@
-<h1><%= @guest.name %>'s Profile Page</h1>
-
-<h1>Episode Date</h1>
-<% @episode.appearance.each do |epi| %>
-<li><%= link_to epi.date, date_path(epi.date) %> 
- <% end %> 
